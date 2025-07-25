@@ -3,15 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>pHero Assignment 02</title>
+    <title>A Simple Flower Website</title>
+    <link rel="icon" href="icons/27.png" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <!-- Body -->
-  <body class="p-7 max-w-7xl mx-auto sm:p-10">
-    
+  <body class="max-w-screen-2xl mx-auto p-7 sm:p-10 sm:text-xl">
     <!-- Header Section -->
     <header class="flex justify-between">
-
       <!-- logo -->
       <div>
         <img class="h-20" src="images/logo.png" alt="Logo of Faugei" />
@@ -19,7 +18,6 @@
 
       <!-- mavbar -->
       <nav class="flex items-center">
-
         <!-- hidden for small display -->
         <div class="hidden sm:block">
           <ul class="flex gap-5 pr-5">
@@ -31,38 +29,38 @@
 
         <!-- cart -->
         <div class="flex gap-1">
-          <img
-            class="h-10 w-10"
-            src="icons/icon-cart.png"
-            alt="Cart"
-          />
-          <p class="flex items-center font-medium">
-            Cart($27)
-          </p>
+          <img class="h-10 w-10" src="icons/icon-cart.png" alt="Cart" />
+          <p class="flex items-center font-medium">Cart($27)</p>
         </div>
       </nav>
     </header>
 
     <!-- Banner Section -->
-    <section class="mt-20 flex flex-col-reverse sm:flex-row justify-between">
-      <div>
-        <h1 class="font-bold text-6xl pb-5">ALWAYS <span class="text-orange-500">FRESH FLOWERS</span></h1>
-        <p class="text-gray-500">
+    <section class="mt-20 grid grid-cols-1 sm:grid-cols-[3fr_2fr] items-center">
+      <!-- image -->
+      <div class="sm:order-2">
+        <img class="w-full" src="images/banner-flower.png" alt="Banner Image" />
+      </div>
+      <!-- text -->
+      <div class="sm:order-1 mt-5 sm:mt-0">
+        <h1 class="font-bold text-6xl">
+          ALWAYS <span class="text-orange-500">FRESH FLOWERS</span>
+        </h1>
+        <p class="pt-5 text-gray-500">
           Indulge your senses with the beauty and fragrance of our fresh flower
           shop. From classic roses to exotic blooms, we offer a wide variety of
           fresh flowers that are perfect for any occasion.
         </p>
-      </div>
-      <div>
-        <img src="images/banner-flower.png" alt="" />
       </div>
     </section>
 
     <!-- Our Plants Section -->
     <section class="mt-20 text-center">
       <div>
-        <h1 class="font-bold text-5xl pb-3"><span class="text-orange-500">Our</span> Plants</h1>
-        <p class="text-gray-500 mx-30">
+        <h1 class="font-bold text-5xl pb-3">
+          <span class="text-orange-500">Our</span> Plants
+        </h1>
+        <p class="px-2 sm:px-20 text-gray-500">
           Indulge your senses with the beauty and fragrance of our fresh flower
           shop. From classic roses to exotic blooms, we offer a wide variety of
           fresh.
@@ -187,21 +185,28 @@
 
     <!-- Flower & Plants Lover (with badge)-->
     <section class="mt-20 grid grid-cols-1 sm:grid-cols-2 sm:mt-40 relative">
-
       <!-- badge -->
-      <div class="hidden sm:block absolute left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <img class="w-80" src="images/trusted-badge.png" alt="Trusted Badge">
+      <div
+        class="hidden sm:block absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
+      >
+        <img class="w-80" src="images/trusted-badge.png" alt="Trusted Badge" />
       </div>
 
-      <!-- image -->
+      <!-- plants lover image -->
       <div class="">
-        <img src="images/flower-plants.png" alt="flower & plants lover picture" />
+        <img
+          class="w-full rounded-lg"
+          src="images/flower-plants.png"
+          alt="flower & plants lover picture"
+        />
       </div>
 
-      <!-- text -->
-      <div class="mt-10 sm:mt-30 sm:ml-10">
-        <h1 class="font-bold text-5xl  pb-3"><span class="text-orange-500">Flowers</span> & Plants Lover</h1>
-        <ul class="list-disc pl-7">
+      <!-- plants lover text -->
+      <div class="mt-5 sm:mt-30 sm:ml-10">
+        <h1 class="font-bold text-5xl pb-3">
+          <span class="text-orange-500">Flowers</span> & Plants Lover
+        </h1>
+        <ul class="list-disc mt-2 sm:mt-5 pl-7">
           <li class="text-gray-500">
             Indulge your senses with the beauty and fragrance of our fresh
             flower shop. From classic roses to exotic blooms, we offer a wide
@@ -225,18 +230,20 @@
     <section class="mt-20 text-center">
       <!-- text -->
       <div>
-        <h1 class="font-bold text-5xl"><span class="text-orange-500">Latest</span> Deals</h1>
-        <p class="px-7 sm:px-20 text-gray-500">
+        <h1 class="font-bold text-5xl">
+          <span class="text-orange-500">Latest</span> Deals
+        </h1>
+        <p class="mt-5 px-7 sm:px-20 text-gray-500">
           Indulge your senses with the beauty and fragrance of our fresh flower
-          shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
+          shop. From classic roses to exotic blooms, we offer a wide variety of
+          fresh.
         </p>
       </div>
 
       <!-- pictures -->
       <div class="mt-10 grid grid-cols-1 sm:grid-cols-[1fr_2fr] gap-5">
-
         <!-- picture 1 -->
-         <div class="relative text-white">
+        <div class="relative text-white">
           <img
             class="rounded-2xl w-full"
             src="images/deal-bloom.png"
@@ -284,19 +291,25 @@
 
     <!-- Join the colorful branch Section -->
     <section class="mt-20 text-center relative">
-      <img class="w-full rounded-md" src="images/join-flower.png" alt="Join Flower" />
+      <img
+        class="w-full rounded-md"
+        src="images/join-flower.png"
+        alt="Join Flower"
+      />
 
       <div
         class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full"
       >
-        <h1 class="font-bold text-white text-4xl mb-5">Join The Colorful Bunch</h1>
+        <h1 class="font-bold text-white text-xl sm:text-4xl mb-1 sm:mb-5">
+          Join The Colorful Bunch
+        </h1>
         <div class="flex w-3/4 mx-auto">
           <input
             class="bg-white p-4 w-3/4"
             type="email"
             placeholder="Write your email"
           />
-          <button class="bg-orange-500 text-white w-1/4 hover:bg-orange-600">
+          <button class="bg-orange-500 hover:bg-orange-600 text-white w-1/4">
             Subscribe
           </button>
         </div>
@@ -314,23 +327,17 @@
         </p>
       </div>
       <div>
-        <ul
-          class="text-gray-500 flex flex-col gap-4 justify-around sm:flex-row"
-        >
-          <div class="flex flex-col gap-5">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Blog</li>
-            <li>FAQ</li>
-            <li>Contact Us</li>
-          </div>
-          <div class="flex flex-col gap-5">
-            <li>Features</li>
-            <li>Pricing</li>
-            <li>Privacy Policy</li>
-            <li>Terms of Service</li>
-            <li>Help Center</li>
-          </div>
+        <ul class="text-gray-500 grid grid-cols-2 gap-5">
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Blog</li>
+          <li>FAQ</li>
+          <li>Contact Us</li>
+          <li>Features</li>
+          <li>Pricing</li>
+          <li>Privacy Policy</li>
+          <li>Terms of Service</li>
+          <li>Help Center</li>
         </ul>
       </div>
       <div>
