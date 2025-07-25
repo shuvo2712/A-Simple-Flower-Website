@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pHero Assignment 02</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <!-- Body -->
+  <body class="p-7 max-w-7xl mx-auto sm:p-10">
+    
+    <!-- Header Section -->
+    <header class="flex justify-between">
+
+      <!-- logo -->
+      <div>
+        <img class="h-20" src="images/logo.png" alt="Logo of Faugei" />
+      </div>
+
+      <!-- mavbar -->
+      <nav class="flex items-center">
+
+        <!-- hidden for small display -->
+        <div class="hidden sm:block">
+          <ul class="flex gap-5 pr-5">
+            <li class="font-bold">Home</li>
+            <li class="font-light">Shop</li>
+            <li class="font-light">About Us</li>
+          </ul>
+        </div>
+
+        <!-- cart -->
+        <div class="flex gap-1">
+          <img
+            class="h-10 w-10"
+            src="icons/icon-cart.png"
+            alt="Cart"
+          />
+          <p class="flex items-center font-medium">
+            Cart($27)
+          </p>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <section class="mt-20 flex flex-col-reverse sm:flex-row justify-between">
+      <div>
+        <h1 class="font-bold text-6xl pb-5">ALWAYS <span class="text-orange-500">FRESH FLOWERS</span></h1>
+        <p class="text-gray-500">
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop. From classic roses to exotic blooms, we offer a wide variety of
+          fresh flowers that are perfect for any occasion.
+        </p>
+      </div>
+      <div>
+        <img src="images/banner-flower.png" alt="" />
+      </div>
+    </section>
+
+    <!-- Our Plants Section -->
+    <section class="mt-20 text-center">
+      <div>
+        <h1 class="font-bold text-5xl pb-3"><span class="text-orange-500">Our</span> Plants</h1>
+        <p class="text-gray-500 mx-30">
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop. From classic roses to exotic blooms, we offer a wide variety of
+          fresh.
+        </p>
+      </div>
+      <!-- 8 Cards -->
+      <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-5">
+        <div>
+          <img
+            class="w-full rounded-lg"
+            src="images/list-flower.png"
+            alt="Flower List"
+          />
+          <h3>Lily Blossom</h3>
+          <p class="font-medium">20 USD</p>
+          <button
+            class="p-2 bg-orange-500 hover:bg-orange-600 rounded-md w-full"
+          >
+            Add To Cart
+          </button>
+        </div>
+        <div>
+          <img
+            class="w-full rounded-lg"
+            src="images/list-flower.png"
+            alt="Flower List"
+          />
+          <h3>Lily Blossom</h3>
+          <p class="font-medium">20 USD</p>
+          <button
+            class="p-2 bg-orange-500 hover:bg-orange-600 rounded-md w-full"
+          >
+            Add To Cart
+          </button>
+        </div>
+        <div>
+          <img
+            class="w-full rounded-lg"
+            src="images/list-flower.png"
+            alt="Flower List"
+          />
+          <h3>Lily Blossom</h3>
+          <p class="font-medium">20 USD</p>
+          <button
+            class="p-2 bg-orange-500 hover:bg-orange-600 rounded-md w-full"
+          >
+            Add To Cart
+          </button>
+        </div>
+        <div>
+          <img
+            class="w-full rounded-lg"
+            src="images/list-flower.png"
+            alt="Flower List"
+          />
+          <h3>Lily Blossom</h3>
+          <p class="font-medium">20 USD</p>
+          <button
+            class="p-2 bg-orange-500 hover:bg-orange-600 rounded-md w-full"
+          >
+            Add To Cart
+          </button>
+        </div>
+        <div>
+          <img
+            class="w-full rounded-lg"
+            src="images/list-flower.png"
+            alt="Flower List"
+          />
+          <h3>Lily Blossom</h3>
+          <p class="font-medium">20 USD</p>
+          <button
+            class="p-2 bg-orange-500 hover:bg-orange-600 rounded-md w-full"
+          >
+            Add To Cart
+          </button>
+        </div>
+        <div>
+          <img
+            class="w-full rounded-lg"
+            src="images/list-flower.png"
+            alt="Flower List"
+          />
+          <h3>Lily Blossom</h3>
+          <p class="font-medium">20 USD</p>
+          <button
+            class="p-2 bg-orange-500 hover:bg-orange-600 rounded-md w-full"
+          >
+            Add To Cart
+          </button>
+        </div>
+        <div>
+          <img
+            class="w-full rounded-lg"
+            src="images/list-flower.png"
+            alt="Flower List"
+          />
+          <h3>Lily Blossom</h3>
+          <p class="font-medium">20 USD</p>
+          <button
+            class="p-2 bg-orange-500 hover:bg-orange-600 rounded-md w-full"
+          >
+            Add To Cart
+          </button>
+        </div>
+        <div>
+          <img
+            class="w-full rounded-lg"
+            src="images/list-flower.png"
+            alt="Flower List"
+          />
+          <h3>Lily Blossom</h3>
+          <p class="font-medium">20 USD</p>
+          <button
+            class="p-2 bg-orange-500 hover:bg-orange-600 rounded-md w-full"
+          >
+            Add To Cart
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flower & Plants Lover (with badge)-->
+    <section class="mt-20 grid grid-cols-1 sm:grid-cols-2 sm:mt-40 relative">
+
+      <!-- badge -->
+      <div class="hidden sm:block absolute left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <img class="w-80" src="images/trusted-badge.png" alt="Trusted Badge">
+      </div>
+
+      <!-- image -->
+      <div class="">
+        <img src="images/flower-plants.png" alt="flower & plants lover picture" />
+      </div>
+
+      <!-- text -->
+      <div class="mt-10 sm:mt-30 sm:ml-10">
+        <h1 class="font-bold text-5xl  pb-3"><span class="text-orange-500">Flowers</span> & Plants Lover</h1>
+        <ul class="list-disc pl-7">
+          <li class="text-gray-500">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh.
+          </li>
+          <li class="text-gray-500">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh.
+          </li>
+          <li class="text-gray-500">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Latest Deals Section -->
+    <section class="mt-20 text-center">
+      <!-- text -->
+      <div>
+        <h1 class="font-bold text-5xl"><span class="text-orange-500">Latest</span> Deals</h1>
+        <p class="px-7 sm:px-20 text-gray-500">
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop. From classic roses to exotic blooms, we offer a wide variety of fresh.
+        </p>
+      </div>
+
+      <!-- pictures -->
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-[1fr_2fr] gap-5">
+
+        <!-- picture 1 -->
+         <div class="relative text-white">
+          <img
+            class="rounded-2xl w-full"
+            src="images/deal-bloom.png"
+            alt="Deal Bloom"
+          />
+          <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full"
+          >
+            <h3>60% Off | Bloom Plant</h3>
+            <h3 class="underline">Shop Now</h3>
+          </div>
+        </div>
+
+        <!-- picture 2 -->
+        <div class="relative text-white row-span-2">
+          <img
+            class="rounded-2xl w-full object-cover"
+            src="images/deal-zabo.png"
+            alt="Deal Zabo"
+          />
+          <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full"
+          >
+            <h3>25% Off | Zabo Plant</h3>
+            <h3 class="underline">Shop Now</h3>
+          </div>
+        </div>
+
+        <!-- picture 3 -->
+        <div class="relative text-white">
+          <img
+            class="w-full rounded-2xl"
+            src="images/deal-ana.png"
+            alt="Deal Ana"
+          />
+          <div
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full"
+          >
+            <h3>30% Off | Ana Plant</h3>
+            <h3 class="underline">Shop Now</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Join the colorful branch Section -->
+    <section class="mt-20 text-center relative">
+      <img class="w-full rounded-md" src="images/join-flower.png" alt="Join Flower" />
+
+      <div
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full"
+      >
+        <h1 class="font-bold text-white text-4xl mb-5">Join The Colorful Bunch</h1>
+        <div class="flex w-3/4 mx-auto">
+          <input
+            class="bg-white p-4 w-3/4"
+            type="email"
+            placeholder="Write your email"
+          />
+          <button class="bg-orange-500 text-white w-1/4 hover:bg-orange-600">
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="mt-20 grid grid-cols-1 gap-10 sm:grid-cols-3">
+      <div>
+        <img src="images/logo.png" alt="Logo" />
+        <p class="text-gray-500">
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop. From classic roses to exotic blooms, we offer a wide variety of
+          fresh flowers that are perfect for any occasion.
+        </p>
+      </div>
+      <div>
+        <ul
+          class="text-gray-500 flex flex-col gap-4 justify-around sm:flex-row"
+        >
+          <div class="flex flex-col gap-5">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Blog</li>
+            <li>FAQ</li>
+            <li>Contact Us</li>
+          </div>
+          <div class="flex flex-col gap-5">
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+            <li>Help Center</li>
+          </div>
+        </ul>
+      </div>
+      <div>
+        <ul class="flex justify-around">
+          <li><img src="icons/icon-facebook.png" alt="Facebook Icon" /></li>
+          <li><img src="icons/icon-x.png" alt="Twitter Icon" /></li>
+          <li><img src="icons/icon-linkedin.png" alt="LinkedIn Icon" /></li>
+          <li><img src="icons/icon-youtube.png" alt="Youtube Icon" /></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
